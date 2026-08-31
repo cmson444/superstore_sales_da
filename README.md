@@ -73,6 +73,18 @@ ORDER BY Year DESC
 "khủng" (22,638) kéo trung bình lên, chứ không hẳn năm đó khách mua sang hơn.
 Số lượng đơn thì tăng đều qua từng năm, cái đó hợp lý hơn để nhìn xu hướng thật.
 
+## 4. Power BI Dashboard
+
+Ngoài phân tích bằng SQL/Python ở trên, mình làm thêm bản dashboard tương tác
+trên Power BI từ cùng bộ dữ liệu, để luyện thêm công cụ BI thay vì chỉ code.
+
+![dashboard](dashboard_overview.png)
+
+Dùng DAX để tạo cột Year từ Order Date, sau đó dựng 3 biểu đồ y hệt phần
+phân tích SQL ở trên (Category, Region, Year). Điểm khác là dashboard này
+có thể tương tác được — bấm vào 1 phần của biểu đồ sẽ tự lọc các biểu đồ
+còn lại (cross-filtering), khác với biểu đồ tĩnh của Matplotlib.
+
 ## Chạy thử
 1. `pip install pandas matplotlib`
 2. Tải dataset `train.csv` từ Superstore Sales Dataset (Kaggle)
