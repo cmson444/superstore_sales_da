@@ -85,6 +85,8 @@ phân tích SQL ở trên (Category, Region, Year). Điểm khác là dashboard 
 có thể tương tác được — bấm vào 1 phần của biểu đồ sẽ tự lọc các biểu đồ
 còn lại (cross-filtering), khác với biểu đồ tĩnh của Matplotlib.
 
+File gốc: `superstore_sales_dashboard.pbix` (cần cài Power BI Desktop để mở).
+
 ## Chạy thử
 1. `pip install pandas matplotlib`
 2. Tải dataset `train.csv` từ Superstore Sales Dataset (Kaggle)
